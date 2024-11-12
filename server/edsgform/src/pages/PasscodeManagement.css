@@ -1,0 +1,167 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+  }
+  
+  /* Main container for the passcode management page */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  .header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4caf50;
+  }
+  
+  /* Passcode form container */
+  .passcode-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Passcode form labels */
+  .passcode-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+    width: 100%;
+  }
+  
+  /* Input fields for the passcode form */
+  .passcode-form input[type="text"],
+  .passcode-form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+    margin-bottom: 16px;
+  }
+  
+  /* Focus state for inputs */
+  .passcode-form input[type="text"]:focus,
+  .passcode-form input[type="password"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+  }
+  
+  /* Button styling for the passcode form */
+  .passcode-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover and disabled states for button */
+  .passcode-form button:hover {
+    background-color: #43a047;
+  }
+  
+  .passcode-form button:disabled {
+    background-color: #c8e6c9;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for error messages */
+  .passcode-form .error-message {
+    color: #e57373;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for success messages */
+  .passcode-form .success-message {
+    color: #4caf50;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Admin passcode list styling */
+  .passcode-list {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .passcode-list th,
+  .passcode-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .passcode-list th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .passcode-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .passcode-list tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Control buttons for passcode management */
+.passcode-list button {
+    padding: 4px 8px; /* Reduced padding */
+    border-radius: 4px;
+    font-size: 0.85rem; /* Slightly smaller font size */
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    width: 60px; /* Set a fixed width for consistency */
+    box-sizing: border-box;
+  }
+  
+  .passcode-list button.delete {
+    background-color: #e57373;
+    margin-left: 0.4%;
+  }
+  
+  .passcode-list button.delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  .passcode-list button.edit {
+    background-color: #4caf50;
+    margin-left: 0.4%;
+  }
+  
+  .passcode-list button.edit:hover {
+    background-color: #43a047;
+  }
+  

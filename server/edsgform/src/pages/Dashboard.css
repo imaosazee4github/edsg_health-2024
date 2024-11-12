@@ -1,0 +1,172 @@
+/* Container setup */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Make the dashboard take up the entire viewport height */
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fc; /* Light grey background for the main content */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff; /* White background for the sidebar */
+  color: #2D3748;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D3748;
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #2D3748;
+  transition: color 0.2s ease;
+  padding-bottom: 5%;
+}
+
+.sidebar-nav li:hover {
+  color: #38A169; /* Light green color for hover */
+}
+
+.sidebar-nav li svg {
+  margin-right: 10px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #38A169; /* this is where the color is supposed to change the logout button */
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f8f9fc; /* Extremely light grey for main background */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #2D3748;
+}
+
+.dashboard-header p {
+  color: #6c757d;
+  margin: 10px 0 30px;
+}
+
+/* Stats cards */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2D3748;
+}
+
+/* Chart areas */
+.charts {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.chart {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Latest projects table */
+.latest-projects {
+  margin-top: 30px;
+}
+
+.latest-projects h3 {
+  color: #2D3748;
+  margin-bottom: 15px;
+}
+
+.latest-projects table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.latest-projects th, .latest-projects td {
+  padding: 12px;
+  border-bottom: 1px solid #e9ecef;
+  text-align: left;
+  font-size: 16px;
+}
+
+.latest-projects th {
+  background-color: #f1f3f5;
+  color: #333;
+  font-weight: bold;
+}
+
+.latest-projects td {
+  color: #495057;
+}
+
+.latest-projects td:first-child {
+  color: #38A169; /* Light green color for project names */
+}

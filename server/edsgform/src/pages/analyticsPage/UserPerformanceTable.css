@@ -1,0 +1,21 @@
+.user-performance-table {
+    margin-top: 20px;
+  }
+  
+  .user-performance-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-performance-table th,
+  .user-performance-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .user-performance-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  

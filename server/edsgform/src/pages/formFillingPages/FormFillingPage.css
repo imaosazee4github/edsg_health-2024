@@ -1,0 +1,101 @@
+/* Main container for the form filling page */
+.form-filling-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-filling-page h1 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Section container */
+  .question-section {
+    margin-bottom: 20px;
+  }
+  
+  .question-section h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Individual question container */
+  .question {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  /* Question text label */
+  .question label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Multiple choice options */
+  .question div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .question div label {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .question input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #4CAF50;
+  }
+  
+  .question input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .question input[type="text"]:focus {
+    border-color: #4CAF50;
+  }
+  
+  /* Navigation buttons */
+  .question-section button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .question-section button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .question-section button:not(:disabled):hover {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .question-section button:last-of-type {
+    float: right;
+  }  

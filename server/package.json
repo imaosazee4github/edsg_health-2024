@@ -1,0 +1,23 @@
+{
+  "name": "edsg",
+  "version": "1.0.0",
+  "description": "ministry health",
+  "main": "api.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api.js",
+    "start": "NODE_ENV=development node api.js",
+    "build": "npm install --prefix ./edsgform && npm run build --prefix ./edsgform"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "expressjs": "^1.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "nodemon": "^3.1.7"
+  }
+}
